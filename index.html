@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1f26, #232a34);
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      max-width: 360px;
+      width: 90%;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffe0;
+      margin-bottom: 15px;
+    }
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+    p {
+      margin: 0 0 15px;
+      color: #bbb;
+    }
+    a {
+      display: block;
+      background: #00ffe0;
+      color: #000;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #00bbaa;
+      transform: translateY(-2px);
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://via.placeholder.com/120" alt="Foto Profil">
+    <h1>Nama Kamu</h1>
+    <p>Deskripsi singkat tentang dirimu. Contoh: Mahasiswa | Desainer | Ngoding HTML</p>
+
+    <!-- Link Sosial Media -->
+    <a href="https://instagram.com/" target="_blank">Instagram</a>
+    <a href="https://t.me/" target="_blank">Telegram</a>
+    <a href="mailto:email@contoh.com">Email</a>
+    <a href="#kontak">Kontak Pribadi</a>
+
+    <footer>
+      © <span id="year"></span> Halaman Pribadi
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
